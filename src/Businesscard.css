@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+* {
+  color: #ffffff;
+
+}
+
+.business-card {
+  max-width: 400px;
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-top: calc(50vh - 75px); /* Centers the card vertically */
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+#background {
+  max-height: 300px;
+}
+  
+.content {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 25px;
+  position: relative;
+}
+
+.content:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 0 0 480px;
+  border-color: transparent transparent transparent #1a1a1a;
+}
+
+img.pic {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 90%;
+  left: 25px;
+  z-index: 1;
+  width: 130px;
+  height: 130px;
+  -webkit-box-shadow: 0 0.25em 0.75em black;
+}
+
+.profile {
+  padding: 0; margin: 0;
+  word-wrap: break-word;
+
+}
+
+h2 span {
+  display: block;
+  font-size: 12px; color:#29538eaf;
+}
+
+.profile p {
+  font-size: 14px;
+  word-wrap: break-word;
+  color:#dddddd;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float:left; margin:5px;background-color: #2e5ad4; padding: 5px 10px 5px 10px;
+  border-radius: 10px; font-size: 12px;
+}
+
+button {
+  background-color: transparent;
+  color: #13a865;
+  opacity: 0.8;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: lighter;
+  border: #13a865 solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px 0 0 0;
+}
+
+button:hover {
+  color:white;
+  border: white solid 2px;
+
+}
